@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Profile</title>
+</head>
+<body>
+
+<table border="1" width="100%">
+<tr>
+<td width="20%">
+<a href="#">Home</a><br>
+<a href="#">About Us</a><br>
+<a href="#">Contact</a>
+</td>
+
+<td>
+<h2>Student Profile</h2>
+<img src="photo.jpg" width="100"><br>
+Roll No: 101 <br>
+Name: Jatin <br>
+Contact: 9876543210 <br>
+Class: TY Cyber <br>
+Interest: Cyber Security
+</td>
+</tr>
+</table>
+
+</body>
+</html>
