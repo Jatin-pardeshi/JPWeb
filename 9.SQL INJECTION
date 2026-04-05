@@ -1,0 +1,22 @@
+💡 HOW IT WORKS (LOGIN EXAMPLE)
+🧾 Normal Query:
+SELECT * FROM users 
+WHERE username='admin' AND password='1234';
+
+👉 This checks correct username & password.
+
+⚠️ Injected Input:
+
+Attacker enters:
+Username: admin
+Password: ' OR '1'='1
+
+🧾 Query Becomes:
+SELECT * FROM users 
+WHERE username='admin' AND password='' OR '1'='1';
+
+❗ What happens?
+
+👉 '1'='1' is always TRUE
+👉 So condition becomes TRUE
+👉 Login bypassed ✅
