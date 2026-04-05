@@ -1,0 +1,13 @@
+✔ Max Budget
+SELECT * FROM project 
+WHERE budget = (SELECT MAX(budget) FROM project);
+
+
+✔ Second Max
+SELECT MAX(budget) 
+FROM project 
+WHERE budget < (SELECT MAX(budget) FROM project);
+
+
+✔ Condition
+SELECT pname FROM project WHERE budget > 10000;
