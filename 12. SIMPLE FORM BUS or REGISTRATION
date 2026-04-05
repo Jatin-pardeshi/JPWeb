@@ -1,0 +1,17 @@
+<form>
+Name: <input type="text"><br>
+Contact: <input type="text"><br>
+
+Source:
+<select>
+<option>Pune</option>
+<option>Mumbai</option>
+</select><br>
+
+Gender:
+<input type="radio">Male
+<input type="radio">Female<br>
+
+<input type="submit">
+<input type="reset">
+</form>
