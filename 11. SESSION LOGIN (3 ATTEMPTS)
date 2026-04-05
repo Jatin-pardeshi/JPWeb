@@ -1,0 +1,19 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['count']))
+  $_SESSION['count'] = 0;
+
+if($_POST){
+  if($_POST['user'] == "admin" && $_POST['pass'] == "admin"){
+    echo "Welcome";
+  } else {
+    $_SESSION['count']++;
+    if($_SESSION['count'] >= 3){
+      echo "Blocked";
+    } else {
+      echo "Try Again";
+    }
+  }
+}
+?>
